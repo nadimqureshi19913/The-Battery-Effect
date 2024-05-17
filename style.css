@@ -1,0 +1,223 @@
+* {
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    font-family: arial;
+    color: white;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .container {
+    width: 60%;
+    height: 600px;
+    background: grey;
+    min-width: 270px;
+  }
+  .container-1 {
+    width: 100%;
+    height: 300px;
+    /* background: ; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .battery-box {
+    width: 15%;
+    height: 70%;
+    background: rgba(0, 0, 200, 0.5);
+    border-radius: 10px;
+    min-width: 70px;
+    margin: 5px;
+  }
+  .container-1 .box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: 50px;
+  }
+  .container-1 .box img {
+    margin-top: 100px;
+    opacity: 1;
+  }
+  
+  .container-1 .box h4 {
+    color: white;
+    text-align: center;
+    font-family: arial;
+    align-items: center;
+    opacity: 1;
+    margin: 0px auto;
+  }
+  .box h4:nth-child(1) {
+    background: red;
+  }
+  .container-1 .box h4:nth-child(2) {
+    opacity: 0;
+    /* background: ; */
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 35%;
+  }
+  .container-1 .box h4:nth-child(3) {
+    opacity: 1;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    margin-top: 190px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  .battery-box:nth-child(2) {
+    position: relative;
+  }
+  /* .battery-box:nth-child(2) h3 {
+  } */
+  .square-box {
+    width: 100%;
+    height: 29px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .square-box:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .square-box:nth-child(6) {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 65px;
+    border: none;
+  }
+  .inner-box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .inner-box img {
+    margin: 5px;
+  }
+  .battery-box:nth-child(2) .inner-box h5:nth-child(3) {
+    opacity: 0;
+    position: absolute;
+    margin-left: 30px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .battery-box:nth-child(3) .content .dv-1 {
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 10px;
+  }
+  .battery-box:nth-child(3) .content .dv-1 .degrees {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  
+  .overlay-2 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.6;
+    margin-top: 130px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .AC-container {
+    width: 100%;
+  }
+  .inner-box-2 {
+    width: 100%;
+    height: 63px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .inner-box-2 h6 {
+    margin: 5px;
+  }
+  .inner-box-2 h6:nth-child(2) {
+    position: absolute;
+    opacity: 0;
+    margin-left: 40px;
+  }
+  
+  .footer {
+    width: 90%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-left: 4%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-family: arial;
+  }
+  .togle-button {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .on-btn {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 5px;
+    border-radius: 10px;
+    font-family: arial;
+    padding: 5px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    border: none;
+  }
+  .off-btn {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-family: arial;
+    padding: 5px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    border: none;
+  }
+  
